@@ -42,6 +42,6 @@ cd nginx-${NGINX_VERSION}
 	--with-pcre=pcre-${PCRE_VERSION} \
 	--prefix=/tmp/nginx \
 	--add-module=/${temp_dir}/nginx-${NGINX_VERSION}/headers-more-nginx-module-${HEADERS_MORE_VERSION} \
-        --with-http_ssl_module --with-openssl=./openssl-${OPEN_SSL_VERSION}
+        --with-http_ssl_module --with-openssl=./openssl-${OPEN_SSL_VERSION} --with-debug
 make -j1 install
 
